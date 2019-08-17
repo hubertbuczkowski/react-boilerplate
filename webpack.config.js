@@ -36,6 +36,18 @@ module.exports = env => {
               }
             ]
           })
+        },
+        {
+          test: /\.svg$/,
+          loader: "svg-inline-loader"
+        },
+        {
+          test: /\.(eot|woff|woff2|ttf)([\?]?.*)$/,
+          use: ["file-loader"]
+        },
+        {
+          test: /\.(woff|woff2|eot|ttf)$/,
+          loader: "url-loader?limit=100000"
         }
       ]
     },

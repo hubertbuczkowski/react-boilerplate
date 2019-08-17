@@ -1,0 +1,15 @@
+.exchange-box-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: $xl-size;
+  font-size: $font-size-footer-links;
+  border-top: 2px solid $grey;
+  padding: 2rem 0 0 0;
+  .copyright {
+    color: $dark-grey;
+    font-weight: 500;
+  }
+  .footer-links {
+  }
+}

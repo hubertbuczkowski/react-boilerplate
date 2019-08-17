@@ -4,9 +4,10 @@
 
 .heder__content {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: $s-size 0;
+  padding: 0;
 }
 
 .header__title {
@@ -14,5 +15,17 @@
   text-decoration: none;
   h1 {
     margin: 0;
+  }
+}
+
+.header__logo {
+  width: 200px;
+  height: auto;
+  margin: 0 0 0 15%;
+}
+
+@media only screen and (max-width: 1085px) {
+  .header__logo {
+    margin: 0 0 0 5%;
   }
 }

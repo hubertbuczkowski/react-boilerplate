@@ -1,0 +1,30 @@
+.step-lineup-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  .step-lineup-item {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    flex-direction: column;
+    color: $medium-grey;
+    padding: $l-size $l-size 0 $l-size;
+    border-bottom: 4px solid $light-blue;
+    font-size: $font-size-steps;
+    h3 {
+      padding: 0;
+      margin: 0;
+    }
+    p {
+      padding: 0;
+      margin: 0.8rem 0 1.7rem 0;
+    }
+  }
+}
+
+.step-lineup-container > .current-step {
+  color: $blue;
+  border-bottom: 4px solid $blue;
+}

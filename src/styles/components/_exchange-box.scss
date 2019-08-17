@@ -1,0 +1,52 @@
+.exchange-box {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    margin-top: $xl-size;
+  }
+  p {
+    margin-bottom: $l-size;
+  }
+  .exchange-box__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 100px;
+    flex-shrink: 4;
+    flex-grow: 1;
+    padding: $l-size;
+    border: 2px solid $grey;
+    border-radius: 5px;
+    h3 {
+      padding: 0;
+      margin: 0 0 1.2rem 0;
+      text-transform: uppercase;
+      font-size: $font-size-exchange-title;
+      font-weight: 500;
+      color: $dark-grey;
+    }
+    .amount {
+      div {
+        font-weight: 700;
+        font-size: $font-size-exchange-amount;
+      }
+    }
+    .currency {
+      width: 10rem;
+      border-radius: 30px 5px 5px 30px;
+      border: 2px solid $grey;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 1rem 0 1rem;
+      img {
+        width: 3rem;
+        height: auto;
+      }
+    }
+  }
+  .sender-box {
+    background: #fafdfe;
+    border: 2px solid $blue;
+  }
+}

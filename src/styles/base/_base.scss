@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "PostGrotesk", sans-serif !important;
   font-size: $m-size;
 }
 
@@ -21,4 +21,9 @@ button:disabled {
 
 .is-active {
   font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
 }

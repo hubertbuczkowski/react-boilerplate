@@ -1,0 +1,33 @@
+.sidebar {
+  background: $bg-sidebar-grey;
+  border-left: 2px solid #e0e0e0;
+
+  justify-content: center;
+  align-items: center;
+  flex: 1 4 100%;
+  flex-basis: 100%;
+  flex-direction: row;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  padding: 0 15% 0 4%;
+
+  padding-top: 55px;
+}
+
+@media only screen and (max-width: 845px) {
+  .sidebar {
+    order: 1;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5%;
+    border-left: 0px;
+    padding-top: 55px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .sidebar {
+    padding: 5%;
+  }
+}
